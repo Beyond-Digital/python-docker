@@ -21,3 +21,6 @@ RUN apt-get update -y -q && apt-get install --no-install-recommends -y \
         libffi-dev \
         libssl-dev \
     && rm -rf /var/lib/apt/lists/*
+
+# Upgrade pip to latest version
+RUN pip install -U pip
